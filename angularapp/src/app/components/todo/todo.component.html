@@ -1,0 +1,15 @@
+<div class="todo">
+  <div (dblclick)="toEditTodo()">{{todo.title}} - <b>{{todo.completed}}</b></div>
+  <input type="checkbox"
+         [checked]="todo.completed"
+         (change)="onStatusChange()">
+  <span *ngIf="loading"><img width="20px" src="https://www.ascensiongamedev.com/uploads/monthly_2017_06/loader.thumb.gif.d3adbbe2d68f5e2d2f0f5c3ed0e94564.gif"></span>
+  <!--<app-todo-editor [edit]></app-todo-editor>-->
+  <div *ngIf="editing">
+    EDITOR:
+    <input type="text"
+           [(ngModel)]="todo.title">
+    <button (click)="tryToSaveTodo()">Save</button>
+  </div>
+
+</div>

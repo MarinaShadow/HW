@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Les_7js</title>
+</head>
+<body>
+
+	<h3>Выберите фигуру:</h3>
+	<form action="">
+			<label for="figure1">
+				<input id="figure1" type="radio" name="typeFigure" value="circle">
+				Круг
+			</label>
+			<div id="myCircle">
+				<input type="text" name="" class="cir" placeholder="w&h">
+			</div>
+			<br>
+
+			<label>
+				<input id="figure2" type="radio" name="typeFigure" value="square">
+				Квадрат
+			</label>
+			<div id="mySquare">
+					<input type="text" name="" class="sq" placeholder="w&h">
+			</div>
+			<br>
+
+			<label>
+				<input id="figure3" type="radio" name="typeFigure" value="oval">
+				Овал
+			</label>
+			<div id="myOval">
+				<input type="text" name="" class="ovW" placeholder="width">
+				<input type="text" name="" class="ovH" placeholder="height">
+			</div>
+			<br>
+
+			<label>
+				<input id="figure4" type="radio" name="typeFigure" value="rectangle">
+				Прямоугольник
+			</label>
+			<div id="myRectangle">
+				<input type="text" name="" class="recW" placeholder="width">
+				<input type="text" name="" class="recH" placeholder="height">
+			</div>
+			<br>
+
+
+	</form>
+
+	<div class="area" id="area"></div>
+
+	<script src="main_les7.js"></script>
+</body>
+</html>
